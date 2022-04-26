@@ -32,7 +32,7 @@ export default class RenderPage {
     this.modalWindow.classList.add('modal-window');
     this.modalWindow.insertAdjacentHTML('beforeend', `
     <div class="modal"> 
-    <img class="modal__close" src=${images.close}/>   
+    <img class="modal__close" src="${images.close}"/>   
     <h2>Отправить заявку</h2>
     <form name="application" class="modal__form">
        <label class="modal__label">
