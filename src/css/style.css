@@ -1,0 +1,145 @@
+@import 'zeroing.css';
+
+body{
+   font-family: Arial;
+}
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+/* style load window */
+.loadingPage{
+   display: none;
+   align-items:center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   background-color:#e5e5e5d8;;
+   z-index: 1;
+}
+
+
+/* стилизация карточек */
+.cards{
+   display: flex;
+   justify-content: space-between;
+   padding: 150px 0;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border-radius: 30px;
+   color: rgb(245, 245, 245);
+   padding: 20px 40px;
+   background-color: rgba(0, 0, 0, 0.919);
+   max-width: 280px;
+}
+
+.card__image{
+   max-width: 100%;
+}
+
+.card__title{
+   padding: 10px 0;
+}
+.card__shop-box{
+   padding: 20px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.card__price{
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.card__buy{
+   padding: 5px 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   border-radius:5px;
+   cursor: pointer;
+}
+
+/* Стилизация модального окна */
+
+.modal-window {   
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   width: 100vw;
+   height: 100vh;
+   background-color:rgba(0, 0, 0, 0.851)
+}
+
+.modal{
+   border-radius: 20px;
+   color: rgb(1, 10, 18);
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   padding: 40px;
+   width: 500px;
+   background-color:rgb(255, 255, 255)
+}
+
+.modal__form{
+   display: flex;
+   flex-direction: column;
+   padding: 20px 0;
+   margin-top: 20px;
+}
+
+.modal__label{
+   position: relative;
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+   padding: 15px 0;
+}
+
+.modal__description{
+   font-weight: bold;
+}
+
+.modal__input{
+   border: 1px solid black;
+   padding: 5px 10px;
+   margin-left: 30px;
+}
+
+.modal__error{
+   position:absolute;
+   left: 110px;
+   top: 45px;
+   color: rgb(239, 15, 15);
+}
+
+.modal__input--novisual{
+   display: none;
+}
+
+.modal__btn{
+   margin-top: 15px;
+   align-self: center;
+   font-size: 14px;
+   padding: 10px 15px;
+   font-weight: bold;
+   border-radius:  5px;
+   text-transform: uppercase;
+   background-color:black;
+   color: aliceblue;
+
+}
+
+.modal__close{
+   cursor: pointer;
+   align-self:flex-end;
+}
+
+
+
